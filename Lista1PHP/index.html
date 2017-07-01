@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ya</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<style>
+		.questao{
+			border: 1px solid;
+			padding-bottom: 40px;
+		}
+		.resultado-rela{
+			position: fixed;
+			width: 200px;
+			height: 100px;
+			top: 0px;
+			right: 0px;
+		}
+		.logo{
+			font-family: 'Lobster', cursive;
+			font-size: 3.4em;
+			display: inline;
+			color: #424242;
+		}
+		.big-button, .big-button:hover{
+			color: white;
+			background: rgba(63, 81, 181, 0.5);
+			width: 300px;
+			height: 200px;
+			font-size: 15px;
+		}
+		header{
+			margin: 5px;
+			border-radius: 8px;
+			background-color: lightblue;
+		}
+		header > *{
+			margin: 5px;
+		}
+		footer{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="logo">DESCUBRA</p>
+					<a href="https://www.linkedin.com/in/gabriel-a-79610b115/">
+						<img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-32.png" alt="linkedin">
+					</a>
+			</div>
+			<div class="col-md-6">
+				<nav>
+					<div class="btn-group">
+						<a class="btn btn-default" href="#q1">Questão 1</a>
+					</div>
+					<div class="btn-group">
+						<a class="btn btn-default" href="#q2">Questão 2</a>
+					</div>
+					<div class="btn-group">
+						<a class="btn btn-default" href="#q3">Questão 3</a>
+					</div>
+					<div class="btn-group">
+						<a class="btn btn-default" href="#q4">Questão 4</a>
+					</div>
+					<div class="btn-group">
+						<a class="btn btn-default" href="#q5">Questão 5</a>
+					</div>
+					<div class="btn-group">
+						<a class="btn btn-default" href="#q6">Questão 6</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+
+
+	<div class="container">
+		<div class="row questao" id="q1">
+			<div class="col-md-12">
+				<h2>Questão 1</h2>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<h3 class="label label-primary">Descubra sua idade atual: </h3>
+				</div>
+				<div class="col-md-6">
+					<form action="Q1.php" method="post">
+						Digite seu ano de nascimento:
+						<input class="form-control" type="text" name="ano" placeholder="Tipo: AAAA"><br>
+						<button type="submit" class="btn btn-default" aria-label="Alinhar na esquerda">
+						  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						  	Enviar
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="row questao" id="q2">
+			<div class="col-md-12">
+				<h2>Questão 2</h2>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<h3 class="label label-primary">Descubra o valor da área de um retângulo: </h3>
+				</div>
+				<div class="col-md-6">
+					<form action="Q2.php" method="post">
+						Digite a base do retângulo:
+						<input class="form-control" type="text" name="base" placeholder="base"><br>
+						Digite a altura do retângulo:
+						<input class="form-control" type="text" name="altura" placeholder="altura"><br>
+						<button type="submit" class="btn btn-default" aria-label="Alinhar na esquerda">
+						  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						  	Enviar
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="row questao" id="q3">
+			<div class="col-md-12">
+				<h2>Questão 3</h2>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<h3 class="label label-primary">Descubra se seu corpo está saudável</h3>
+				</div>
+				<div class="col-md-6">
+					<form action="Q3.php" method="post">
+						Digite seu peso:
+						<input class="form-control" type="text" name="peso" placeholder="Digite seu peso">
+						Digite sua altura:
+						<input class="form-control" type="text" name="altura" placeholder="Digite sua altura">
+						<button type="submit" class="btn btn-default" aria-label="Alinhar na esquerda">
+						  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						  	Enviar
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row questao" id="q4">
+			<div class="col-md-12">
+				<h2>Questão 4</h2>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<h3 class="label label-primary">Descubra se você está autorizado a acessar a página</h3>
+				</div>
+				<div class="col-md-6">
+					<form action="Q4.php" method="post">
+						Digite o nome de usuário:
+						<input class="form-control" type="text" name="usuario" placeholder="Digite seu peso">
+						Digite sua senha:
+						<input class="form-control" type="password" name="senha" placeholder="Digite sua altura">
+						<button type="submit" class="btn btn-default" aria-label="Alinhar na esquerda">
+						  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						  	Enviar
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row questao" id="q5">
+			<div class="col-md-12">
+				<h2>Questão 5</h2>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<h3 class="label label-primary">Descubra a frase pelos idiomas de cada bandeira</h3>
+				</div>
+				<div class="col-md-6">
+					<a href="idioma.php">
+						<button type="button" class="big-button btn btn-default" aria-label="Alinhar na esquerda">
+						  Clique aqui para ir para a página
+						</button>
+					</a>					
+				</div>
+			</div>
+		</div>
+		<div class="row questao" id="q6">
+			<div class="col-md-12">
+				<h2>Questão 4</h2>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<h3 class="label label-primary">Descubra até onde vai o limite de estrelas</h3>
+				</div>
+				<div class="col-md-6">
+					<form action="Q6.php" method="post">
+						<input class="form-control" type="text" name="estrelas">
+						<button type="submit" class="btn btn-default" aria-label="Alinhar na esquerda">
+						  	Estrelas
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="container">
+		Copyright © 2017 | Gabriel Alexsandro
+	</footer>
+</body>
+</html>
